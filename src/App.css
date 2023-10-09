@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.myclass {
+  color: crimson;
+  font-size: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-bg {
+  background-image: url("../public/back_image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item .active {
+  font-weight: bold;
+  border-bottom: 2px solid blueviolet;
+  color: blueviolet !important;
+}
+
+.background--custom {
+  background: linear-gradient(90deg, #a4baf5, #c8e74d, #f5a2a1);
+  background-size: 300% 300%;
+  animation: gradient 4s alternate infinite;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.glass-card {
+  background-color: #ffffff7c; 
+}
+
+.journal-bg{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('../public//img/mount.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: aquamarine;
+  backface-visibility: visible;
 }
